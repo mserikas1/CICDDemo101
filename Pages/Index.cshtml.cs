@@ -14,7 +14,7 @@ namespace CICDDemo101.Pages
 
         public void OnGet()
         {
-            BusinessLogic.CalculatePrice(-1);
+            //BusinessLogic.CalculatePrice(-1);
         }
     }
 
