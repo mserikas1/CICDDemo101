@@ -14,7 +14,20 @@ namespace CICDDemo101.Pages
 
         public void OnGet()
         {
+            BusinessLogic.CalculatePrice(-1);
+        }
+    }
 
+    public static class BusinessLogic
+    {
+        public static int CalculatePrice(int qty)
+        {
+            if (qty < 0)
+            {
+                throw new ArgumentOutOfRangeException("qty is less then 0");
+            }
+
+            return 0;
         }
     }
 }
